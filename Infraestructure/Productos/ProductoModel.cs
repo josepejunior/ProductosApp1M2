@@ -133,6 +133,11 @@ namespace Infraestructure.Productos
         {
             return JsonConvert.SerializeObject(productos);
         }
+
+        public string ConvertAsJson(Producto[] prods)
+        {
+            return JsonConvert.SerializeObject(prods, Formatting.Indented);
+        }
         #endregion
 
         #region Private method
